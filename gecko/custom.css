@@ -164,16 +164,14 @@ textarea {
 }
 
 .welcome.row {
-	margin-top: 3em;
+	margin-top: 2em;
 }
 
 .welcome h2 {
-	font-size: xx-large;
-	margin-bottom: 1.5em;
-	color: #fff;
-	font-weight: 300;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	font-size: x-large;
+	margin-bottom: 0.5em;
 }
+
 
 .welcome p {
 	font-size: 1.2em;
@@ -183,4 +181,25 @@ textarea {
 .widget ul {
 	clear: both;
 	list-style: none;
+}
+
+[class*='cols-'] {
+	display:table;
+}
+[class*='cols-'] > * {
+		float: none;
+	    position: relative;
+	    /* old ie fixes */
+	    *zoom: 1; 
+	    *display: inline;
+	    display: table-cell;
+}
+.cols-bottom > * {
+        	vertical-align: bottom;
+}
+.cols-top > * {
+        	vertical-align: top;
+}
+.p-top {
+	    vertical-align: top;
 }
